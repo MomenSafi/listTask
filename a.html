@@ -6,45 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>list of tasks</title>
     <style>
-        body {
-            display: flex;
-        }
-
-        .category {
-            margin: 20px; 
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
         span {
             font-size: 26px;
+            margin-left: -40px;
+            padding-left: 0px;
             cursor: pointer;
-            margin-right: 20px; 
+        }
+
+        div {
+            padding-left: 50px;
         }
 
         ul li {
             display: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        span:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
     <div>
-        <div class="category">
+        <ul>
             <span onclick="toggleTasks('taskHtml')">Html</span>
-            <ul id="taskHtml" class="f">
+            <ul id="taskHtml">
                 <li><a href="https://momensafi.github.io/HtmlTasks/Task1.html" target="_blank">Task 1 </a></li>
                 <li><a href="https://momensafi.github.io/HtmlTasks/Task2.html" target="_blank">Task 2 </a></li>
                 <li><a href="https://momensafi.github.io/HtmlTasks/Task3.html" target="_blank">Task 3 </a></li>
@@ -53,59 +36,36 @@
                 <li><a href="https://momensafi.github.io/HtmlTasks/Task6.html" target="_blank">Task 6 </a></li>
                 <li><a href="https://momensafi.github.io/HtmlTasks/Task7.html" target="_blank">Task 7 </a></li>
             </ul>
-        </div>
 
-        <div class="category">
             <span onclick="toggleTasks('taskCSS')">CSS</span>
-            <ul id="taskCSS" class="f">
+            <ul id="taskCSS">
                 <li><a href="https://momensafi.github.io/CSSTasks/Task%201/index.html" target="_blank">Task 1 </a></li>
                 <li><a href="https://momensafi.github.io/CSSTasks/Task%202/index.html" target="_blank">Task 2 </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%203/login/index.html" target="_blank">Task 3 (log
-                        in)</a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%203/sign%20up/index.html" target="_blank">Task 3
-                        (sign up)</a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%204/task4.1/index.html" target="_blank">Task 4
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%204/task4.2/index.html" target="_blank">Task 4
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%204/task4.3/index.html" target="_blank">Task 4
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%205/Task5.1/index.html" target="_blank">Task 5
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%205/task5.2/index.html" target="_blank">Task 5
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%205/task5.3/index.html" target="_blank">Task 5
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.1/index.html" target="_blank">Task 6
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.2/index.html" target="_blank">Task 6
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.3/index.html" target="_blank">Task 6
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.4/index.html" target="_blank">Task 6
-                    </a></li>
-                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.5/index.html" target="_blank">Task 6
-                    </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%203/login/index.html" target="_blank">Task 3 (log in)</a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%203/sign%20up/index.html" target="_blank">Task 3 (sign up)</a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%204/task4.1/index.html" target="_blank">Task 4 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%204/task4.2/index.html" target="_blank">Task 4 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%204/task4.3/index.html" target="_blank">Task 4 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%205/Task5.1/index.html" target="_blank">Task 5 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%205/task5.2/index.html" target="_blank">Task 5 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%205/task5.3/index.html" target="_blank">Task 5 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.1/index.html" target="_blank">Task 6 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.2/index.html" target="_blank">Task 6 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.3/index.html" target="_blank">Task 6 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.4/index.html" target="_blank">Task 6 </a></li>
+                <li><a href="https://momensafi.github.io/CSSTasks/Task%206/Task6.5/index.html" target="_blank">Task 6 </a></li>
             </ul>
-        </div>
 
-        <div class="category">
             <span onclick="toggleTasks('JSPopUp')">JS PopUp</span>
-            <ul id="JSPopUp" class="f">
-                <li><a href="https://momensafi.github.io/JavaScript/Task%201/index.html" target="_blank">Task 1 </a>
-                </li>
-                <li><a href="https://momensafi.github.io/JavaScript/Task%202/index.html" target="_blank">Task 2 </a>
-                </li>
-                <li><a href="https://momensafi.github.io/JavaScript/Task%203/index.html" target="_blank">Task 3 </a>
-                </li>
-                <li><a href="https://momensafi.github.io/JavaScript/Task%204/index.html" target="_blank">Task 4 </a>
-                </li>
+            <ul id="JSPopUp">
+                <li><a href="https://momensafi.github.io/JavaScript/Task%201/index.html" target="_blank">Task 1 </a></li>
+                <li><a href="https://momensafi.github.io/JavaScript/Task%202/index.html" target="_blank">Task 2 </a></li>
+                <li><a href="https://momensafi.github.io/JavaScript/Task%203/index.html" target="_blank">Task 3 </a></li>
+                <li><a href="https://momensafi.github.io/JavaScript/Task%204/index.html" target="_blank">Task 4 </a></li>
             </ul>
-        </div>
 
-        <div class="category">
             <span onclick="toggleTasks('JSloop')">JS loop</span>
-            <ul id="JSloop" class="f">
+            <ul id="JSloop">
                 <li><a href="https://momensafi.github.io/Js-2/task%201/" target="_blank">Task 1 </a></li>
                 <li><a href="https://momensafi.github.io/Js-2/task%202/" target="_blank">Task 2 </a></li>
                 <li><a href="https://momensafi.github.io/Js-2/task%203/" target="_blank">Task 3 </a></li>
@@ -115,11 +75,9 @@
                 <li><a href="https://momensafi.github.io/Js-2/task%207/" target="_blank">Task 7 </a></li>
                 <li><a href="https://momensafi.github.io/Js-2/task%208/" target="_blank">Task 8 </a></li>
             </ul>
-        </div>
 
-        <div class="category">
             <span onclick="toggleTasks('JSfunction')">JS function</span>
-            <ul id="JSfunction" class="f">
+            <ul id="JSfunction">
                 <li><a href="https://momensafi.github.io/Js-2/js3/task%201/" target="_blank">Task 1 </a></li>
                 <li><a href="https://momensafi.github.io/Js-2/js3/task%202/" target="_blank">Task 2 </a></li>
                 <li><a href="https://momensafi.github.io/Js-2/js3/task%203/" target="_blank">Task 3 </a></li>
@@ -145,11 +103,9 @@
                 <li><a href="https://momensafi.github.io/Js-2/js3/task%2023/" target="_blank">Task 23 </a></li>
                 <li><a href="https://momensafi.github.io/Js-2/js3/task%2024/" target="_blank">Task 24 </a></li>
             </ul>
-        </div>
 
-        <div class="category">
             <span onclick="toggleTasks('JSArray')">JS Array</span>
-            <ul id="JSArray" class="f">
+            <ul id="JSArray">
                 <li><a href="https://momensafi.github.io/JS-3/task%201/" target="_blank">Task 1 </a></li>
                 <li><a href="https://momensafi.github.io/JS-3/task%202/" target="_blank">Task 2 </a></li>
                 <li><a href="https://momensafi.github.io/JS-3/task%203/" target="_blank">Task 3 </a></li>
@@ -173,35 +129,31 @@
                 <li><a href="https://momensafi.github.io/JS-3/task%2021/" target="_blank">Task 21 </a></li>
                 <li><a href="https://momensafi.github.io/JS-3/task%2022/" target="_blank">Task 22 </a></li>
             </ul>
-        </div>
 
-        <div class="category">
             <span onclick="toggleTasks('JSforeach')">JS foreach</span>
-            <ul id="JSforeach" class="f">
+            <ul id="JSforeach">
                 <li><a href="https://momensafi.github.io/JS-4/foreach/task%201/" target="_blank">Task 1 </a></li>
                 <li><a href="https://momensafi.github.io/JS-4/foreach/task%202/" target="_blank">Task 2 </a></li>
                 <li><a href="https://momensafi.github.io/JS-4/foreach/task%203/" target="_blank">Task 3 </a></li>
                 <li><a href="https://momensafi.github.io/JS-4/foreach/task%204/" target="_blank">Task 4 </a></li>
                 <li><a href="https://momensafi.github.io/JS-4/foreach/task%205/" target="_blank">Task 5 </a></li>
             </ul>
-        </div>
 
-        <div class="category">
             <span onclick="toggleTasks('JSmap')">JS map</span>
-            <ul id="JSmap" class="f">
-                <li><a href="https://momensafi.github.io/JS-4/map/task%201/" target="_blank">Task 1 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%202/" target="_blank">Task 2 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%203/" target="_blank">Task 3 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%204/" target="_blank">Task 4 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%205/" target="_blank">Task 5 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%206/" target="_blank">Task 6 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%207/" target="_blank">Task 7 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%208/" target="_blank">Task 8 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%209/" target="_blank">Task 9 </a></li>
-                <li><a href="https://momensafi.github.io/JS-4/map/task%2010/" target="_blank">Task 10 </a></li>
-            </ul>
-        </div>
-        
+            <ul id="JSmap">
+            <li><a href="https://momensafi.github.io/JS-4/map/task%201/" target="_blank">Task 1 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%202/" target="_blank">Task 2 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%203/" target="_blank">Task 3 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%204/" target="_blank">Task 4 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%205/" target="_blank">Task 5 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%206/" target="_blank">Task 6 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%207/" target="_blank">Task 7 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%208/" target="_blank">Task 8 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%209/" target="_blank">Task 9 </a></li>
+            <li><a href="https://momensafi.github.io/JS-4/map/task%2010/" target="_blank">Task 10 </a></li>
+        </ul>
+
+        </ul>
     </div>
 
     <script>
